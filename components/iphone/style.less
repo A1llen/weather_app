@@ -1,0 +1,433 @@
+@import '~style/helpers';
+
+
+.wind {
+    position: relative;
+    bottom: 12%;
+    font-size: 2em;
+    font-weight: 400;
+
+
+}
+
+.roundedContainersafetydemo {
+    transition: all 2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(196, 196, 196, 0.15);
+    border-radius: 50px;
+    box-shadow: 0px 0px 15px #0000003a;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto;
+    gap: 30px;
+     /* add flex-wrap to enable wrapping */
+  }
+
+.explainContainer{
+    transition: all 2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    border-radius: 50px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto;
+    gap: 30px;
+    
+}
+
+
+.roundedContainersafety {
+    transition: all 2s ease-in-out;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 50px;
+    backdrop-filter: blur(4px);
+    padding: 16px;
+    width: 85%;
+    height: 200px;
+    margin: auto;
+    margin-top: 10px;
+    gap: 30px; /* add gap */
+}
+
+
+.iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .iconContainer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 13px; /* adjust spacing between elements */
+  }
+
+  .safetyContainer {
+    margin: 1px;
+
+  }
+
+  .safetyContainer > div {
+
+    margin: 18px; /* adjust spacing between elements */
+  }
+  
+
+  .iconDescription {
+    font-size: 19px;
+    margin-bottom: 0;
+    text-align: center;
+    line-height: 1.2; 
+  }
+  .iconDescriptionglove{
+    position: relative;
+
+    bottom: 4px;
+    font-size: 19px;
+    margin-top: 1px;
+    margin-bottom: 0;
+    text-align: center;
+    line-height: 1.2;
+  }
+.gloveIcon {
+    margin-top: 19px;
+    margin-bottom: 1px;
+    transform: scale(1.1);
+  }
+
+.text {
+    font-size: 60px;
+    color: #7a98a3;
+    text-align: center;
+
+}
+
+.textSafetyCaution {
+    font-size: 60px;
+    color: #7a98a3;
+    text-align: right;
+
+}
+.popup {
+    transition: all 1s ease-in-out;
+    width: 750px;
+    height: 1400px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 5;
+    margin: auto;
+    z-index: 9;
+    background-color: rgba(108, 108, 108, 0.15);
+    backdrop-filter: blur(13px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+
+
+  .popupSafety {
+    transition: all 1s ease-in-out;
+    width: 750px;
+    height: 1400px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 5;
+    margin: auto;
+    z-index: 9;
+    background-color: rgba(84, 84, 84, 0.3);
+    backdrop-filter: blur(13px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+
+
+//   .{
+
+//   }
+.exitButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 40px;
+    padding: 10px 20px;
+    background-color: rgba(157, 157, 157, 0);
+    color: #ffffff;
+    backdrop-filter: blur(4px);
+    border-radius: 27px;
+    border: none;
+    cursor: pointer;
+    font-size: 38px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.learnButton{
+    transition: all 0.2s ease-out;
+    opacity: 0.8;
+    position: absolute;
+    margin: auto; //distance
+    margin-top: -50px;
+    margin-left: 650px;
+    padding: 10px 20px;
+    font-family: serif;
+    font-style: italic;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    color: #ffffff;
+    display:block;
+    height: 59px;
+    width:58px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 38px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.container { 
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 750px;
+    height: 1334px;
+    text-align: center;
+    padding-top: 5%;
+    margin: 0 auto;
+}
+.expand{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(157, 157, 157, 0);
+    color: #ffffff;
+    backdrop-filter: blur(4px);
+    border-radius: 27px;
+    border: none;
+    cursor: pointer;
+    font-size: 38px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.header {
+    transition: all 0.2s ease-out;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.details {
+    flex: 4;
+}
+
+.city {
+    margin: auto; //distance
+    margin-top: -65px;
+    
+    flex: 1;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+.conditions {
+    flex: 1;
+    font-size: 1.5em;
+}
+
+.temperature {
+    flex: 2;
+    margin-top: 0;
+    font-size: 10em;
+    font-weight: 100;
+    letter-spacing: -12px;
+    margin-bottom: 6%;
+}
+
+.filled:after {
+    margin: 0 0 0 1rem;
+    font-size: 0.5em;
+    font-weight: 100;
+    display: inline-block;
+    padding-top: 10px;
+    vertical-align: top;
+}
+
+
+  .roundedContainerforecast {
+    transition: all 0.5s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 50px;
+    backdrop-filter: blur(4px);
+    padding: 16px;
+    width: 85%;
+    height: 40%;
+    margin: auto; //distance
+    margin-top: 40px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.roundedContainer1 {
+    transition: all 0.5s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 50px;
+    backdrop-filter: blur(4px);
+    padding: 16px;
+    width: 48%;
+    height: 90%;
+    margin: auto; //distance
+    margin-top: 5px;
+    margin-left: 0.1%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.roundedContainer2 {
+    transition: all 0.5s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 50px;
+    backdrop-filter: blur(4px);
+    padding: 16px;
+    width: 48%;
+    height: 90%;
+    margin: auto; //distance
+    margin-top: 5px;
+    margin-right: 0.1%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.roundedContainer3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    backdrop-filter: blur(4px);
+    padding: 16px;
+    width: 90%;
+    height: 28%;
+    margin: auto; //distance
+    margin-top: 10px;
+}
+
+.text {
+    font-size: 60px;
+    color: #7a98a3;
+    text-align: center;
+
+}
+.bigNumber {
+    font-size: 300px;
+    font-weight: 70;
+    color: #FFFFFF;
+    text-align: center;
+
+
+  }
+
+.wind {
+    font-size: 29px;
+    font-weight: 400;
+    margin-top: 1%;
+    opacity: 0.9;
+
+}
+
+
+.safetyCautionInfo{
+    width: 100 px;
+    padding: 10px;
+    overflow: hidden;
+    
+}
+
+.safetyCautionInfo img {
+    margin-right: 15px;
+    float: left;
+}
+
+.safetyCautionInfo h3,
+.safetyCautionInfo p{
+    margin-left: 15px;
+    display: block;
+    margin: 2px 0 0 0;
+    font-size: 30px;
+}
+
+////////////////////// above are the things i added
+
+
+
+
+
+.container { 
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 750px;
+    height: 1334px;
+    text-align: center;
+    padding-top: 5%;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.details {
+    flex: 4;
+}
+.city {
+    flex: 1;
+    font-size: 3em;
+    font-weight: 400;
+}
+.conditions {
+    flex: 1;
+    font-size: 1.5em;
+}
+.temperature {
+    flex: 2;
+    margin-top: 0;
+    font-size: 10em;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 6%;
+}
+.filled:after {
+
+    margin: 0 0 0 1rem;
+    font-size: 0.5em;
+    font-weight: 100;
+    display: inline-block;
+    padding-top: 10px;
+    vertical-align: top;
+}
+
+
